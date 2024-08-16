@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* App Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Page Styles */
+.CreateBook, .BookList {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.CreateBook {
+  background-color: #f8f9fa; /* Light background for forms */
+}
+
+.BookList {
+  background-color: #ffffff; /* White background for book list */
+}
+
+/* BookList Styles */
+.list {
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2em;
+  padding: 0 10px;
+}
+
+.card-container {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.desc {
+  padding: 10px;
+}
+
+.desc h2 {
+  font-size: 1.2em; /* Increased font size for better visibility */
+  font-weight: 400;
+  margin: 0;
+}
+
+.desc h3 {
+  font-size: 1em;
+  color: #6c757d;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.desc p {
+  font-size: 0.9em; /* Adjusted font size for description */
+  font-weight: 300;
+}
+
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
